@@ -1,6 +1,10 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function Navbar() {
+function Nav_bar() {
   return (
 <Navbar className="bg-body-tertiary">
         <Container>
@@ -36,3 +40,6 @@ function Navbar() {
 </Navbar>
   );
 }
+
+
+export default Nav_bar;
