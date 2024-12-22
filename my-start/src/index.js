@@ -8,10 +8,6 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/js/bootstrap.esm.min.js';
 import 'bootstrap/dist/js/bootstrap.esm.js';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
