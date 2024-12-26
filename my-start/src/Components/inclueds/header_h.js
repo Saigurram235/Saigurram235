@@ -88,27 +88,45 @@ function HeaderH() {
       </Navbar>
 
       {/* Mobile View - Contact Us at Bottom */}
-      <div className="contact-us-mobile d-lg-none bg-danger-subtle text-center p-2">
-        <span>Contact Us:</span>
-        <a
-          href="mailto:gkstationeryandbookstore900@gmail.com"
-          className="ms-2"
-        >
-          <img alt="mail icon" src={mail} width="20" height="20" />
-        </a>
-        <a
-          href="https://www.facebook.com/gkstationaryandbookstore/"
-          className="ms-2"
-        >
-          <img alt="facebook icon" src={facebook} width="20" height="20" />
-        </a>
-        <a href="https://www.instagram.com/gkstationary/" className="ms-2">
-          <img alt="instagram icon" src={instagram} width="20" height="20" />
-        </a>
-        <a href="https://maps.app.goo.gl/qGCqURUxVjpXpRxv8" className="ms-2">
-          <img alt="map icon" src={map} width="20" height="20" />
-        </a>
-      </div>
+      <div
+      className="contact-us-mobile d-lg-none bg-danger-subtle text-center p-2"
+      style={{
+        position: "sticky",
+        top: "0", // Sticks to the top of the viewport
+        zIndex: "999", // Ensures it's on top of other elements
+        boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)", // Add a subtle shadow for emphasis
+      }}
+    >
+      <span style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Contact Us:</span>
+      <a
+        href="mailto:gkstationeryandbookstore900@gmail.com"
+        className="ms-2"
+        style={{ marginLeft: "10px" }}
+      >
+        <img alt="mail icon" src={mail} width="20" height="20" />
+      </a>
+      <a
+        href="https://www.facebook.com/gkstationaryandbookstore/"
+        className="ms-2"
+        style={{ marginLeft: "10px" }}
+      >
+        <img alt="facebook icon" src={facebook} width="20" height="20" />
+      </a>
+      <a
+        href="https://www.instagram.com/gkstationary/"
+        className="ms-2"
+        style={{ marginLeft: "10px" }}
+      >
+        <img alt="instagram icon" src={instagram} width="20" height="20" />
+      </a>
+      <a
+        href="https://maps.app.goo.gl/qGCqURUxVjpXpRxv8"
+        className="ms-2"
+        style={{ marginLeft: "10px" }}
+      >
+        <img alt="map icon" src={map} width="20" height="20" />
+      </a>
+    </div>
     </>
   );
 }
