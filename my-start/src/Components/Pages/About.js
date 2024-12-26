@@ -1,0 +1,26 @@
+import React from "react";
+import Nav_bar from "../inclueds/Nav_bar";
+import Header_h from "../inclueds/header_h";
+import Footer from "../inclueds/footer";
+import ProductSlider from "../inclueds/productslider";
+import "../project.css";
+
+function Product() {
+  return (
+<div className="d-flex flex-column min-vh-100">
+  <Header_h />
+  <Nav_bar />
+  <div className="flex-grow-1">
+
+    <div className="text-scroller">
+      <h1>Find everything you need to ................About............make studies easy!</h1>
+    </div>
+    <ProductSlider />
+  </div>
+  <Footer />
+</div>
+
+  );
+}
+
+export default Product;

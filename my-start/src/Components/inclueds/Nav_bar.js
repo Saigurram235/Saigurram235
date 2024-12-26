@@ -4,13 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../images/logo.png";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <Navbar bg="light" expand="md" className="bg-body-tertiary">
       <Container>
         {/* Logo - Always Visible */}
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand className="d-flex align-items-center" as={Link} to="/">
+          
           <img
             alt="Logo"
             src={logo}
@@ -29,17 +30,14 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Navigation Links */}
           <Nav className="me-auto fs-5">
-            <Nav.Link 
-            // as={Link} to="./Components/Pages/Home"
-            >Home</Nav.Link>
-            <Nav.Link href=""
-            >Products</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to={"/products"}>Products</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Service 1</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Service 2</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Service 3</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="./Components/Pages/About">About Us</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={"/about"}>About Us</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

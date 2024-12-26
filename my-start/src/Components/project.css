@@ -119,6 +119,57 @@ footer p {
   }
 }
 
+
+
+
+
+/* Product Page */
+
+/* General h1 Styling */
+#prod {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 20px auto;
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient background */
+  border-radius: 8px;
+  width: 80%; /* Limit width for better appearance */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Specific h1 with IDs */
+#notebooks-heading {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Different gradient */
+  color: #333;
+  font-weight: bold;
+}
+
+#materials-heading {
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  color: #fff;
+}
+
+#stationary-heading {
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+  color: black;
+}
+
+#workbooks-heading {
+  background: linear-gradient(90deg, #3a1c71, #d76d77, #ffaf7b);
+  color: #fff;
+}
+
+#all-books-heading {
+  background: linear-gradient(90deg, #bdc3c7, #2c3e50);
+  color: #fff;
+}
+
+
+
+
+
+
   /* Mobile view adjustments */
   @media (max-width: 768px) {
     .marquee-container {

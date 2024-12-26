@@ -6,11 +6,15 @@ import HomePageSlider from "../inclueds/homepageslider";
 import ProductSlider from "../inclueds/productslider";
 import "../project.css";
 
+
+
 function Home() {
   return (
+
 <div className="d-flex flex-column min-vh-100">
   <Header_h />
   <Nav_bar />
+ 
   <div className="flex-grow-1">
     <HomePageSlider />
     <div className="text-scroller">

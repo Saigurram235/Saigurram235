@@ -1,26 +1,35 @@
 import React from "react";
-import Nav_bar from "../inclueds/Nav_bar";
-import Header_h from "../inclueds/header_h";
-import Footer from "../inclueds/footer";
-import HomePageSlider from "../inclueds/homepageslider";
-import ProductSlider from "../inclueds/productslider";
 import "../project.css";
+import Nav_bar from "../inclueds/Nav_bar";
+import ProductSlider from "../inclueds/productslider";
+import Footer from "../inclueds/footer";
 
 function Product() {
   return (
-<div className="d-flex flex-column min-vh-100">
-  <Header_h />
-  <Nav_bar />
-  <div className="flex-grow-1">
-
-    <div className="text-scroller">
-      <h1>Find everything you need to make studies easy!</h1>
+    <div className="d-flex flex-column min-vh-100">
+      <Nav_bar />
+      <h1 id="prod">NoteBooks</h1>
+      <div className="product-slider">
+        <ProductSlider />
+      </div>
+      <h1 id="prod">Materials</h1>
+      <div className="product-slider">
+        <ProductSlider />
+      </div>
+      <h1 id="prod">Stationary</h1>
+      <div className="product-slider">
+        <ProductSlider />
+      </div>
+      <h1 id="prod">WorkBooks</h1>
+      <div className="product-slider">
+        <ProductSlider />
+      </div>
+      <h1 id="prod">All Other Types of Books</h1>
+      <div className="product-slider">
+        <ProductSlider />
+      </div>
+      <Footer />
     </div>
-    <ProductSlider />
-  </div>
-  <Footer />
-</div>
-
   );
 }
 
