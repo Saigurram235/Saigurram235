@@ -1,50 +1,51 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../images/logo.png';
-
-function Nav_bar() {
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import logo from "../images/logo.png";
+// import { Link } from "react-router-dom";
+function NavBar() {
   return (
-<Navbar className="bg-body-tertiary">
-        <Container>
-        <Navbar.Brand class="d-flex align-bottom">
-          
-            <img
-              alt="" href="#home"
-              src={logo}
-              width="45"
-              height="45"
-              className="d-inline-block align-bottom"
-            />{' '}
+    <Navbar bg="light" expand="md" className="bg-body-tertiary">
+      <Container>
+        {/* Logo - Always Visible */}
+        <Navbar.Brand href="#home" className="d-flex align-items-center">
+          <img
+            alt="Logo"
+            src={logo}
+            width="45"
+            height="45"
+            className="d-inline-block align-bottom me-2"
+          />
+          {/* Title Hidden on Mobile */}
+          <span className="fs-4 fw-bold d-none d-md-block">G.K Stationary & Bookstore</span>
         </Navbar.Brand>
-           
-          <Nav className="me-auto fs-3">
-            <Nav.Link href="#home">G.K Stationary & Bookstore</Nav.Link>
-          </Nav>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="d-flex justify-content-end " id="basic-navbar-nav" >
-          <Nav>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Products</Nav.Link>
-            <NavDropdown title="Servies" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+
+        {/* Navbar Toggle for Mobile */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        {/* Collapsible Navbar Section */}
+        <Navbar.Collapse id="basic-navbar-nav">
+          {/* Navigation Links */}
+          <Nav className="me-auto fs-5">
+            <Nav.Link 
+            // as={Link} to="./Components/Pages/Home"
+            >Home</Nav.Link>
+            <Nav.Link href=""
+            >Products</Nav.Link>
+            <NavDropdown title="Services" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Service 1</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Service 2</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Service 3</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                About Us
-              </NavDropdown.Item>
+              <NavDropdown.Item href="./Components/Pages/About">About Us</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        </Container>
-</Navbar>
+      </Container>
+    </Navbar>
   );
 }
 
-
-export default Nav_bar;
+export default NavBar;
