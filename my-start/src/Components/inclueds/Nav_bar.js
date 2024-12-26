@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../images/logo.png";
-
+// import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <Navbar bg="light" expand="md" className="bg-body-tertiary">
@@ -29,14 +29,17 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Navigation Links */}
           <Nav className="me-auto fs-5">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#products">Products</Nav.Link>
+            <Nav.Link 
+            // as={Link} to="./Components/Pages/Home"
+            >Home</Nav.Link>
+            <Nav.Link href=""
+            >Products</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Service 1</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Service 2</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Service 3</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#about-us">About Us</NavDropdown.Item>
+              <NavDropdown.Item href="./Components/Pages/About">About Us</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
