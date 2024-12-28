@@ -3,7 +3,7 @@ import Nav_bar from "../inclueds/Nav_bar";
 import Header_h from "../inclueds/header_h";
 import Footer from "../inclueds/footer";
 import HomePageSlider from "../inclueds/homepageslider";
-import ProductSlider from "../inclueds/productslider";
+import ProductSlider from "../inclueds/homeproduct";
 import "../project.css";
 
 

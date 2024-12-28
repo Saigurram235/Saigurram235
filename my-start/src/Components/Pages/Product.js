@@ -1,8 +1,13 @@
 import React from "react";
 import "../project.css";
 import Nav_bar from "../inclueds/Nav_bar";
-import ProductSlider from "../inclueds/productslider";
+// import ProductSlider from "../inclueds/productslider";
 import Footer from "../inclueds/footer";
+import Notebooks from "../inclueds/NoteBooks";
+import Materials from "../inclueds/Materials";
+import Stationary from "../inclueds/Stationary";
+import WorkBooks from "../inclueds/WorkBooks";
+import AllOtherTypesOfBooks from "../inclueds/Others";
 
 function Product() {
   return (
@@ -10,23 +15,31 @@ function Product() {
       <Nav_bar />
       <h1 id="prod">NoteBooks</h1>
       <div className="product-slider">
-        <ProductSlider />
+        <Notebooks />
       </div>
       <h1 id="prod">Materials</h1>
       <div className="product-slider">
-        <ProductSlider />
+        {/* <ProductSlider /> */}
+        <Materials />
+
       </div>
       <h1 id="prod">Stationary</h1>
       <div className="product-slider">
-        <ProductSlider />
+        {/* <ProductSlider /> */}
+        <Stationary />
+
       </div>
       <h1 id="prod">WorkBooks</h1>
       <div className="product-slider">
-        <ProductSlider />
+        {/* <ProductSlider /> */}
+        <WorkBooks />
+
       </div>
       <h1 id="prod">All Other Types of Books</h1>
       <div className="product-slider">
-        <ProductSlider />
+        {/* <ProductSlider /> */}
+        <AllOtherTypesOfBooks />
+
       </div>
       <Footer />
     </div>
